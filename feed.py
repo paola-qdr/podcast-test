@@ -9,7 +9,7 @@ with open('feed.yaml') as yamlFile:
     websiteUrl = yamlData['website_url']
     
     # create rss element
-    rssElement = xmlTree.Element('rss', {'version': '2.0', 'xmlns:itunes': 'ww.test.com', 'xmlns:content': 'Hey Content'})
+    rssElement = xmlTree.Element('rss', {'version': '2.0', 'xmlns:itunes': 'www.test.com', 'xmlns:content': 'http://test.org'})
     
     # create subelement
     channelElement = xmlTree.SubElement(rssElement, 'channel')
